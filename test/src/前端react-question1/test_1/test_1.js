@@ -63,7 +63,6 @@ function sortUserName(users) {
 }
 
 function sortByType(users) {
-  // 使用 Array.prototype.sort 方法對使用者按照 'profession' 的原則進行排序
   const professionOrder = {
     systemAnalytics: 1,
     engineer: 2,
