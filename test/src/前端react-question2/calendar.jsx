@@ -6,7 +6,7 @@ import "../styles/calendar.css";
 import CalendarTitle from "./components/calendarTitle";
 
 const Calendar = ({ date }) => {
-  // ===================== 常量 =====================
+  // ===================== 常數 =====================
 
   /** 日曆的列數 (日曆有幾周) */
   const CALENDAR_HAS_FIVE_WEEKS = 5;
