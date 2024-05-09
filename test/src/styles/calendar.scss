@@ -1,0 +1,53 @@
+// 今天日期樣式
+.today{
+  background-color: #ffff76;
+}
+
+// 非本月日期樣式
+.non-current-month {
+  color: #949494 ;
+  pointer-events : none; 
+  cursor : default; 
+}
+
+.selected{
+  background-color: #006edc;
+  color: white;
+}
+
+// 日曆容器
+.main{
+  width: 100vw;
+  height: 100vh;
+  .calendar {
+    font-family: Arial, sans-serif;
+  
+    // 標題樣式
+    .calendar-title {
+      width: 350px;
+      height: 44px;
+      margin-bottom: 16px;
+    }
+  
+    // 月份選擇按鈕樣式
+    .month-selector-button {
+      width: 44px;
+      height: 44px;
+      background-color: #fff;
+      border: none;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #e6e6e6;
+      }
+    }
+  
+    // 日鈕樣式
+    .calendar-day {
+      width: 50px;
+      height: 36px;
+      cursor: pointer;
+    }
+  }
+  
+}

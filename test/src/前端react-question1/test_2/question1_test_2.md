@@ -1,0 +1,1 @@
+ `.container .shop-list li.item` 選擇器具有更高的優先順序，因此其樣式將覆蓋 `.container .shop-list .item` 的樣式。

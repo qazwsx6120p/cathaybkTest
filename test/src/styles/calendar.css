@@ -1,0 +1,42 @@
+.today {
+  background-color: #ffff76;
+}
+
+.non-current-month {
+  color: #949494;
+  pointer-events: none;
+  cursor: default;
+}
+
+.selected {
+  background-color: #006edc;
+  color: white;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+}
+.main .calendar {
+  font-family: Arial, sans-serif;
+}
+.main .calendar .calendar-title {
+  width: 350px;
+  height: 44px;
+  margin-bottom: 16px;
+}
+.main .calendar .month-selector-button {
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.main .calendar .month-selector-button:hover {
+  background-color: #e6e6e6;
+}
+.main .calendar .calendar-day {
+  width: 50px;
+  height: 36px;
+  cursor: pointer;
+}/*# sourceMappingURL=calendar.css.map */
