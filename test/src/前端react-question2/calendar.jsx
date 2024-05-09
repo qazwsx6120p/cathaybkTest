@@ -19,11 +19,11 @@ const Calendar = ({ date }) => {
 
   // ===================== 狀態 =====================
 
-   /** 儲存所選日期 */
-   const [selectedDate, setSelectedDate] = useState(moment(date));
+  /** 儲存所選日期 */
+  const [selectedDate, setSelectedDate] = useState(moment(date));
 
-   /** 儲存所選範圍 */
-   const [selectedRange, setSelectedRange] = useState([]);
+  /** 儲存所選範圍 */
+  const [selectedRange, setSelectedRange] = useState([]);
   // ===================== 函數 =====================
 
   /** 處理點擊上一個月的事件 */
@@ -54,15 +54,13 @@ const Calendar = ({ date }) => {
 
       // 確保較小的日期作為範圍的起始點，較大的日期作為範圍的終點
       if (startDay < endDay) {
-        newRange = Array.from(
-          { length: endDay - startDay + 1 },
-          (_, index) => startDay + index
-        );
+        for (let i = startDay; i <= endDay; i++) {
+          newRange.push(i);
+        }
       } else {
-        newRange = Array.from(
-          { length: startDay - endDay + 1 },
-          (_, index) => endDay + index
-        );
+        for (let i = endDay; i <= startDay; i++) {
+          newRange.push(i);
+        }
       }
     }
     // 如果已經選擇了兩個日期，則清空選擇範圍
